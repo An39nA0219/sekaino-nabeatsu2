@@ -10,6 +10,13 @@ function App() {
   const onClickSwitchStatus = () => {
     setDisplayStatus(!displayStatus);
   }
+  if (num > 0) {
+    if (num % 3 === 0) {
+      displayStatus || setDisplayStatus(true);
+    } else {
+      displayStatus && setDisplayStatus(false);
+    }
+  }
 
   return (
     <>
